@@ -1,0 +1,23 @@
+{
+  "name": "string-format-enhanced",
+  "main": "src/string-format-enhanced.js",
+  "version": "1.0.0-alpha.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shaftware/string-format-enhanced.git"
+  },
+  "devDependencies": {
+    "bower": "*",
+    "express": "^4.13.0",
+    "grunt": "*",
+    "grunt-bower": "*",
+    "grunt-bower-requirejs": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-nuget": "^0.1.4",
+    "load-grunt-tasks": "*"
+  },
+  "scripts": {
+    "test": "bower install && grunt test"
+  }
+}
