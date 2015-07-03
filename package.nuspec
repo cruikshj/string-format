@@ -3,7 +3,7 @@
   <metadata>
     <id>string-format.js</id>
     <version>1.0.0</version>
-    <title>string-format</title>
+    <title>string-format.js</title>
     <authors>Shaftware</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A string format function for JavaScript based on C# string formatting, but with a few enhancements such as named tokens and additional modifiers.</description>
