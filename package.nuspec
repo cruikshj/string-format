@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>string-format-enhanced</id>
-    <version>1.0.0-alpha</version>
-    <title>string-format-enhanced</title>
+    <id>string-format.js</id>
+    <version>1.0.0</version>
+    <title>string-format</title>
     <authors>Shaftware</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A string format function for JavaScript based on C# string formatting, but with a few enhancements such as named tokens and additional modifiers.</description>
-    <projectUrl>https://github.com/shaftware/string-format-enhanced</projectUrl>    
+    <projectUrl>https://github.com/shaftware/string-format</projectUrl>    
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <copyright>Copyright © 2015 Shaftware</copyright>    
   </metadata>
   <files>
-    <file src="src\string-format-enhanced.js" target="content\scripts\string-format-enhanced.js" />
+    <file src="dist\string-format.js" target="content\scripts\" />
+    <file src="dist\string-format.min.js" target="content\scripts\" />
   </files>
 </package>

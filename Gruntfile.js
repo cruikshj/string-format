@@ -18,21 +18,31 @@
           tasks: ['jshint']
         }
       },
+      copy: {
+        dist: {
+          src: 'src/string-format.js',
+          dest: 'dist/string-format.js'
+        }
+      },
+      uglify: {
+        dist: {
+          files: {
+            'dist/string-format.min.js': ['dist/string-format.js']
+          }
+        }
+      },
       nugetpack: {
         dist: {
           src: 'package.nuspec',
-          dest: 'dist/nuget/'
+          dest: 'nuget/'
         }
       }
     });
 
-    //For development
     grunt.registerTask('dev', ['jshint', 'watch:scripts']);
-
-    //For testing
     grunt.registerTask('test', ['jshint']);
-    
-    //For release
+    grunt.registerTask('build', ['copy', 'uglify']);
+    grunt.registerTask('ci', ['test', 'build']);
     grunt.registerTask('pack', ['nugetpack']);
   };
 })();
