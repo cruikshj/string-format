@@ -1,0 +1,9 @@
+bower_components
+nuget
+.travis.yml
+Gruntfile.js
+package.nuspec
+bower.json
+.jshintrc
+.gitignore
+.editorconfig
