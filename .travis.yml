@@ -1,6 +1,23 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 before_script:
-  - npm install -g grunt-cli
-  - npm install -g bower
+- npm install -g grunt-cli
+- npm install -g bower
+deploy:
+  - provider: releases
+    api_key:
+      secure: AmfzwokpjP/aY3S+fsBAyH9nHVU3hKTfOqkJj/aHd/Ci5o+waPwno8C9v3+kHyn4BMO8kgd68AWhv7kS+Pxa4kLvPL7Ma+fWuG+4zrSZUil0bQ0X/jzH2LW3uA8EteF0urK81J4JoBSASRu48S9ks3W6ltySbVsSLcdxe43ZUIKA1WlDIamy9waqwKiBU7REQm63a0DtgDvbvrYKzsyINjMLIiC1ZwFqPuCVMnHa2buMzzwUFosmsazKTp13Hr743WvR6Lbl/JOEZxYuPVLesl6uRNyWJpSjJxx7MVwUwsMw/cwN5e+lJImahlccRDA2p1UQdxdme4j/io+FZVGFbG4HW0NjL1WkuldnRBl8exxSJrJz3r8wpzIiTFH5VPDQ54jYEGaGtTNWeEJn8UlxnQZYPj17UommJjN0QnBAoaV7Y8J1gYIkDp39IOhAGJcg4oF/ahHwlTojHimiQiage5RtP3c46QmAIyASuFE7MPFItPJts2dG9tj9odNLkztkbcvJH0Caowqn3B8TmF7OiLf4e5MEjyhI8SelVM40MQJ4HaE4g7w5klPHmXf0YXNSqJXRmLVGcSLI4F0JzX8Jr2V903H8nJqgI1jMkn6zsXjvUaPO9D8G5qNV2scEcONRCnIR9YPx3TC9A/n37E48RaRa0JInMpWs++etPiklRl0=
+    file:
+      - "dist/string-format.js"
+      - "dist/string-format.min.js"
+    on:
+      tags: true
+      repo: shaftware/string-format
+  - provider: npm
+    email: cruikshj@live.com
+    api_key:
+      secure: cpGGZabE/irjJgReErNu4S0ZNN9FyRs2MSc4WeF4cfeI6VdenJYuw81S9HCXdeHoQe9JqTAi6+2fmovXerea6PZAq2XGu68utuMPbxGPlXakfdyVsMaVbYlbpx3hir1+mbKNoNQiJgX4T/pdqvU/VZFNtxdthcqY6gnRy2uWNXvh3OH0+Koj1ng8JvDABg74xd+Q6vXFAWeatQTf1XgYYeEQ+s+zifMGIFLsfsKqYV8sJFjbD3ASkdbWfyE34zMyh02AMvhldeZXQj3+8m80g0i8qelw+hPtFOFqNVrCfpkeREeEnf/HXe6/BEZaHSwkt9AR2nTFzp4UJqEdPIV8bctyMO8fhcrAV80d/135UTfBjFlRhRZWuRGKJOF7vVN5Ej1I97pJwqRAqzpxIluhlR7YjlYpePpbCC10zcjrUXrxY3ty9kPnJMwSQzQFCaYBH0rb6prNwhHX5gd4icCaAFO62xkpmyES+Ul2VBa7wA5OKRCLA+KyBvGpMRFA1zmwHmJmvgXyiUfQJrgV+0SN0MdwitfAczswEMDRV0+R02ZpTOM96aq3a09JKeUECGRI6OD3YWPKz8gL0rUGQNpF7OOMipBEl2qYpWmu9eqql00iVdV22XxMiJM4gMbYwbj6WA24vZWmVH2xh328/rKN11CrSn5hnGa61mxvU4DnXOc=
+    on:
+      tags: true
+      repo: shaftware/string-format
