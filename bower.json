@@ -5,7 +5,7 @@
   "keywords": ["knockout", "knockoutjs", "ko", "select2"],
   "repository": {
     "type": "git",
-    "url": "git@github.com:shaftware/string-format.git"
+    "url": "git@github.com:cruikshj/string-format.git"
   },
   "devDependencies": {
     "requirejs": "*"
