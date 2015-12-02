@@ -13,11 +13,11 @@ deploy:
       - "dist/string-format.min.js"
     on:
       tags: true
-      repo: shaftware/string-format
+      repo: cruikshj/string-format
   - provider: npm
     email: cruikshj@live.com
     api_key:
       secure: cpGGZabE/irjJgReErNu4S0ZNN9FyRs2MSc4WeF4cfeI6VdenJYuw81S9HCXdeHoQe9JqTAi6+2fmovXerea6PZAq2XGu68utuMPbxGPlXakfdyVsMaVbYlbpx3hir1+mbKNoNQiJgX4T/pdqvU/VZFNtxdthcqY6gnRy2uWNXvh3OH0+Koj1ng8JvDABg74xd+Q6vXFAWeatQTf1XgYYeEQ+s+zifMGIFLsfsKqYV8sJFjbD3ASkdbWfyE34zMyh02AMvhldeZXQj3+8m80g0i8qelw+hPtFOFqNVrCfpkeREeEnf/HXe6/BEZaHSwkt9AR2nTFzp4UJqEdPIV8bctyMO8fhcrAV80d/135UTfBjFlRhRZWuRGKJOF7vVN5Ej1I97pJwqRAqzpxIluhlR7YjlYpePpbCC10zcjrUXrxY3ty9kPnJMwSQzQFCaYBH0rb6prNwhHX5gd4icCaAFO62xkpmyES+Ul2VBa7wA5OKRCLA+KyBvGpMRFA1zmwHmJmvgXyiUfQJrgV+0SN0MdwitfAczswEMDRV0+R02ZpTOM96aq3a09JKeUECGRI6OD3YWPKz8gL0rUGQNpF7OOMipBEl2qYpWmu9eqql00iVdV22XxMiJM4gMbYwbj6WA24vZWmVH2xh328/rKN11CrSn5hnGa61mxvU4DnXOc=
     on:
       tags: true
-      repo: shaftware/string-format
+      repo: cruikshj/string-format
