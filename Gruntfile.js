@@ -1,9 +1,9 @@
 /*jshint node:true, es3:false*/
-(function() {
+(function () {
   'use strict';
-  module.exports = function(grunt) {
-    require('load-grunt-tasks')(grunt); 
-    
+  module.exports = function (grunt) {
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
       jshint: {
@@ -20,8 +20,9 @@
       },
       copy: {
         dist: {
-          src: 'src/string-format.js',
-          dest: 'dist/string-format.js'
+          files: [
+            { expand: true, cwd: 'src', src: ['string-format.js', 'string-format.d.ts'], dest: 'dist/' }
+          ]
         }
       },
       uglify: {

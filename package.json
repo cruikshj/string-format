@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git@github.com:cruikshj/string-format.git"
   },
-  "types": "./string-format.d.ts",
+  "types": "dist/string-format.d.ts",
   "devDependencies": {
     "bower": "*",
     "express": "^4.13.0",
