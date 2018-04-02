@@ -1,7 +1,7 @@
 {
   "name": "string-format-enhanced",
   "main": "dist/string-format.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A string format function for JavaScript based on C# string formatting, but with a few enhancements such as named tokens and additional modifiers.",
   "keywords": ["knockout", "knockoutjs", "ko", "select2"],
   "repository": {
